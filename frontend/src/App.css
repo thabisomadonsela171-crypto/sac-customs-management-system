@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+*{box-sizing:border-box;margin:0;padding:0}
+html,body,#root{background:radial-gradient(ellipse at top left,#5a2bbd 0%,#2a1a6b 40%,#0d1025 100%) fixed !important;min-height:100vh;font-family:Inter,sans-serif;color:#fff}
+button{font-family:inherit;cursor:pointer}
+
+/* TOP NAV - FIXES YOUR WHITE TABS */
+.dashboard-layout{display:flex;min-height:100vh}
+.side-rail,.sidebar-v2{display:none} /* Hide old rail that causes white tabs bug */
+.dashboard-content{width:100%;padding:16px}
+
+/* HEADER */
+.glass-header{display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,0.07);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.12);border-radius:14px;padding:12px 16px;margin-bottom:14px}
+.glass-header h2{font-size:13px;font-weight:800}
+.glass-header p{font-size:10px;opacity:0.5}
+.status-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(34,197,94,0.15);border:1px solid rgba(34,197,94,0.3);padding:5px 10px;border-radius:20px;font-size:10px;color:#4ade80}
+.status-badge span{width:6px;height:6px;background:#4ade80;border-radius:50%}
+
+/* ANALYTICS - FIXES YOUR STRETCHED GRAPH */
+.analytics-card{background:rgba(255,255,255,0.06);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:14px;margin-bottom:14px}
+.analytics-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.analytics-top h3{font-size:13px}
+.filter-pills{display:flex;gap:8px;align-items:center}
+.filter-pills span,.add-btn{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.1);padding:5px 10px;border-radius:20px;font-size:10px;color:white}
+.add-btn{background:linear-gradient(90deg,#a5f3fc,#22d3ee)!important;color:#000!important;font-weight:800;box-shadow:0 0 15px rgba(34,211,238,0.4)}
+
+.analytics-grid{display:grid;grid-template-columns:1.5fr 0.6fr 0.8fr;gap:14px}
+.a-box{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.06);border-radius:12px;padding:12px;overflow:hidden}
+.small-title{font-size:10px;opacity:0.5}
+.a-val{display:flex;gap:6px;align-items:center;margin-top:4px}
+.a-val b{font-size:16px}
+.a-val i{font-style:normal;font-size:9px;color:#4ade80;background:rgba(74,222,128,0.15);padding:2px 6px;border-radius:10px}
+.chart-box{width:100%;height:70px;margin-top:10px}
+.chart-box svg{width:100%;height:70px;display:block}
+.months{display:flex;justify-content:space-between;font-size:9px;opacity:0.35;margin-top:6px}
+.mt{margin-top:14px;display:block}
+.pie-wrap{display:flex;justify-content:center;margin:10px 0}
+.pie{width:80px;height:80px;border-radius:50%;display:grid;place-items:center}
+.pie-inner{width:48px;height:48px;background:#2a1a5e;border-radius:50%}
+.pie-labels{font-size:10px;display:grid;gap:6px;margin-top:8px}
+.dot{width:7px;height:7px;border-radius:50%;display:inline-block;margin-right:6px}
+.dot.c{background:#22d3ee}.dot.p{background:#a855f7}
+.activity-list{display:grid;gap:12px;font-size:11px;margin-top:10px}
+.activity-list small{opacity:0.4;font-size:9px}
+.gauge-box{width:90px;height:45px;margin:10px auto;border:6px solid rgba(255,255,255,0.1);border-bottom:0;border-top-left-radius:100px;border-top-right-radius:100px;border-top-color:#22d3ee;border-left-color:#a855f7}
+.center-text{font-size:10px;opacity:0.5;text-align:center;margin-top:6px}
+
+/* MASTER */
+.master-grid{display:grid;grid-template-columns:2fr 1fr;gap:14px}
+.master-card,.team-card{background:rgba(255,255,255,0.06);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:14px}
+.master-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.master-search{display:flex;gap:8px;margin-bottom:12px;align-items:center}
+.master-search div:first-child{flex:1}
+.master-search span{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.08);padding:6px 10px;border-radius:20px;font-size:10px}
+.master-table{width:100%;border-collapse:collapse;font-size:11px}
+.master-table th{text-align:left;padding:8px;opacity:0.4;font-size:10px;border-bottom:1px solid rgba(255,255,255,0.08)}
+.master-table td{padding:10px 8px;border-bottom:1px solid rgba(255,255,255,0.05);opacity:0.8}
+.pill{background:rgba(34,211,238,0.15);color:#22d3ee;padding:3px 10px;border-radius:12px;font-size:10px;font-weight:700}
+.go{background:transparent;border:none;color:#22d3ee;font-weight:700;cursor:pointer;font-size:11px}
+.team-list{display:grid;gap:8px}
+.team{display:flex;gap:10px;align-items:center;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.06);padding:8px;border-radius:10px;color:white;text-align:left;width:100%}
+.av{width:26px;height:26px;background:rgba(255,255,255,0.1);border-radius:50%;display:grid;place-items:center;font-size:12px}
+.quick-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
+.quick-btn{background:rgba(255,255,255,0.06)!important;border:1px solid rgba(255,255,255,0.12)!important;color:white!important;border-radius:10px;padding:10px;text-align:left;font-size:11px}
+.error-message{background:rgba(239,68,68,0.15);border:1px solid rgba(239,68,68,0.3);padding:10px;border-radius:8px;margin-bottom:10px;font-size:11px;color:#fca5a5}
+@media(max-width:900px){.analytics-grid{grid-template-columns:1fr}.master-grid{grid-template-columns:1fr}}

@@ -1,0 +1,10 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+html, body, #root{
+  background: radial-gradient(ellipse at top left,#7b2cf0 0%, #2e1a6b 45%, #0a1025 100%) fixed !important;
+  min-height:100vh;
+  font-family: "Inter", sans-serif;
+}
